@@ -1,0 +1,324 @@
+.darkscreen {
+  width: 100%;
+  height: 110vh;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #00000080;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.modal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--light-100);
+  position: absolute;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.4rem;
+  padding: 1rem 4rem;
+  width: 500px;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.modal-content .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-content .modal-header .title-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-content .modal-header .title-box h3 {
+  color: var(--light-30);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.modal-content .modal-header .title-box button {
+  background-color: transparent;
+  border: none;
+  padding: 0.4rem;
+}
+
+.modal-content .modal-header .title-box img {
+  width: 1.2rem;
+  height: auto;
+}
+
+.modal-content .modal-header .progress-box {
+  width: 100%;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-content .modal-header .progress-box h4 {
+  color: var(--light-50);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.modal-content .modal-header .progress-box .progress-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.4rem;
+}
+
+.modal-content .modal-header .progress-box .progress-list .progress {
+  background-color: var(--light-90);
+  width: 4rem;
+  height: 0.4rem;
+  margin: 0 0.2rem;
+}
+
+.modal-content .modal-header .progress-box .progress-list .active {
+  background-color: var(--success);
+}
+
+.modal-content .txt-modal {
+  margin-top: 1rem;
+  color: var(--light-50);
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.modal-content #back_button {
+  visibility: hidden;
+}
+
+.modal-content #cadastro_1 {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-content #cadastro_1 input[type=radio] {
+  display: none;
+}
+
+.modal-content #cadastro_1 .button-voluntaio {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--light-90);
+  padding: 4rem 0;
+  width: 100%;
+  max-height: 8rem;
+  margin: 1rem 0;
+  border-radius: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.modal-content #cadastro_1 .button-voluntaio i {
+  color: var(--light-50);
+  font-size: 2rem;
+}
+
+.modal-content #cadastro_1 .button-voluntaio p {
+  font-weight: 700;
+  color: var(--light-50);
+  margin-top: 0.4rem;
+}
+
+.modal-content #cadastro_1 .active {
+  background-color: var(--orange-2);
+  width: 100%;
+}
+
+.modal-content #cadastro_1 .active i {
+  color: var(--light-100);
+}
+
+.modal-content #cadastro_1 .active p {
+  color: var(--light-100);
+}
+
+.modal-content .input-box {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.modal-content .input-box label {
+  color: var(--light-50);
+  font-family: 'Roboto', sans-serif;
+  margin-left: 2rem;
+}
+
+.modal-content .input-box .input-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.2rem;
+}
+
+.modal-content .input-box .input-row .icon-case {
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-content .input-box .input-row .icon-case i {
+  color: var(--light-50);
+  font-size: 0.8rem;
+}
+
+.modal-content .input-box .input-row input {
+  width: 100%;
+  height: 1.6rem;
+  border: 1px solid var(--light-50);
+  border-radius: 0.4rem;
+  padding: 0 0.4rem;
+}
+
+.modal-content #cadastro_2 {
+  display: none;
+}
+
+.modal-content #cadastro_3 {
+  display: none;
+}
+
+.modal-content .modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.modal-content .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.modal-content .modal-footer button {
+  background-color: var(--red-1);
+  border-radius: 0.6rem;
+  border: none;
+  width: 12.8rem;
+  height: 2.6rem;
+  color: var(--light-100);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    padding: 1rem 1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=modal.css.map */

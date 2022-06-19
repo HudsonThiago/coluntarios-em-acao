@@ -1,0 +1,241 @@
+.darkscreen {
+    width: 100%;
+    height: 110vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #00000080;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.modal {
+    box-sizing: border-box;
+    background-color: var(--light-100);
+    position: absolute;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0.4rem;
+    padding: 1rem 4rem;
+    width: 500px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    .modal-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .title-box {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            h3 {
+                color: var(--light-30);
+                font-size: 2rem;
+                font-weight: 700;
+            }
+    
+            button {
+                background-color: transparent;
+                border: none;          
+                padding: 0.4rem;
+            }
+    
+            img {
+                width: 1.2rem;
+                height: auto;
+            }
+        }
+
+        .progress-box{
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                color: var(--light-50);
+                font-size: 0.8rem;
+                font-weight: 700;
+            }
+
+            .progress-list {
+                display: flex;
+                flex-direction: row;
+                margin-top: 0.4rem;
+
+                .progress {
+                    background-color: var(--light-90);
+                    width: 4rem;
+                    height: 0.4rem;
+                    margin: 0 0.2rem;
+                }
+
+                .active {
+                    background-color: var(--success);
+                }
+            }
+        }
+    }
+    
+    .txt-modal {
+        margin-top: 1rem;
+        color: var(--light-50);
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    #back_button {
+        visibility: hidden;
+    }
+
+    #cadastro_1 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        input[type=radio] {
+            display: none;
+        }
+
+        .button-voluntaio {
+            box-sizing: border-box;
+            background-color: var(--light-90);
+            padding: 4rem 0;
+            width: 100%;
+            max-height: 8rem;
+            margin: 1rem 0;
+            border-radius: 0.6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: .3s;
+
+            i {
+                color: var(--light-50);
+                font-size: 2rem;
+            }
+
+            p {
+                font-weight: 700;
+                color: var(--light-50);
+                margin-top: 0.4rem;
+            }
+        }
+
+        .active {
+            background-color: var(--orange-2);
+            width: 100%;
+
+            i {
+                color: var(--light-100);
+            }
+
+            p {
+                color: var(--light-100);
+            }
+        }
+    }
+    
+    .input-box {
+        width: 100%;
+        margin-top: 1rem;
+
+        label {
+            color: var(--light-50);
+            font-family: 'Roboto', sans-serif;
+            margin-left: 2rem;
+        }
+
+        .input-row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 0.2rem;
+            
+            .icon-case {
+                width: 2rem;
+                display: flex;
+                justify-content: center;
+
+                i {
+                    color: var(--light-50);
+                    font-size: 0.8rem;
+                }
+            }
+
+            input {
+                width: 100%;
+                height: 1.6rem;
+                border: 1px solid var(--light-50);
+                border-radius: 0.4rem;
+                padding: 0 0.4rem;
+            }
+        }
+    }
+
+    #cadastro_2 {
+        display: none;
+    }
+
+    #cadastro_3 {
+        display: none;
+    }
+
+    .modal-body {
+        flex: 1 0 auto;
+    }
+
+    .modal-footer {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: auto;
+        
+        button {
+            background-color: var(--red-1);
+            border-radius: 0.6rem;
+            border: none;
+            width: 12.8rem;
+            height: 2.6rem;
+            color: var(--light-100);
+            font-weight: 700;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .modal {
+        padding: 1rem 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
