@@ -1,6 +1,8 @@
 window.addEventListener("load", ()=>{
     const btn_cadastro = document.getElementById("btn-cadastro");
+    const btn_login = document.getElementById("btn-login");
     const modal_cadastro = document.getElementById("modal-cadastro");
+    const modal_login = document.getElementById("modal-login");
     const fechar_modal = document.querySelectorAll(".fechar-modal");
     const darkscreen = document.querySelectorAll(".darkscreen");
     const user_voluntario = document.querySelector("#user_voluntario");
@@ -20,6 +22,11 @@ window.addEventListener("load", ()=>{
     btn_cadastro.addEventListener("click", ()=>{
         modal_cadastro.style.visibility = "visible";
         modal_cadastro.style.opacity = 1;
+    })
+
+    btn_login.addEventListener("click", ()=>{
+        modal_login.style.visibility = "visible";
+        modal_login.style.opacity = 1;
     })
 
     for(let i=0;i<fechar_modal.length;i++){
